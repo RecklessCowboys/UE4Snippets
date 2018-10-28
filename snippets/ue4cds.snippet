@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>ue4cds</Title>
+      <Author>github.com/narthur157</Author>
+      <Description>Unreal Engine CreateDefaultSubobject snippet</Description>
+      <HelpUrl>
+      </HelpUrl>
+      <Shortcut>ue4cds</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>name</ID>
+          <ToolTip>Subobject name</ToolTip>
+          <Default>NewComp</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>class</ID>
+          <ToolTip>Component class name</ToolTip>
+          <Default>Component</Default>
+          <Function>
+          </Function>
+        </Literal>
+      </Declarations>
+      <Code Language="cpp"><![CDATA[$name$ = CreateDefaultSubobject<$class$>(TEXT("$name$"));
+$selected$ $end$]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
